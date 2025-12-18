@@ -10,7 +10,8 @@ class Account {
     }
 
     void disp() {
-        System.out.println(acc_no + " " + balance);
+        System.out.println("Account No: " + acc_no);
+        System.out.println("Balance: " + balance);
     }
 }
 
@@ -25,13 +26,18 @@ class Person extends Account {
     }
 
     void disp() {
-        System.out.println(name + " " + aadhar_no + " " + acc_no + " " + balance);
+        System.out.println("Name: " + name);
+        System.out.println("Aadhar No: " + aadhar_no);
+        System.out.println("Account No: " + acc_no);
+        System.out.println("Balance: " + balance);
+        System.out.println("----------------------");
     }
 }
 
 public class BankDetails {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         Person[] p = new Person[3];
 
         for (int i = 0; i < 3; i++) {
@@ -42,5 +48,7 @@ public class BankDetails {
         for (int i = 0; i < 3; i++) {
             p[i].disp();
         }
+
+        sc.close();
     }
 }
