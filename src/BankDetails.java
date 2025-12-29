@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 class Account {
     int acc_no;
@@ -30,7 +30,7 @@ class Person extends Account {
         System.out.println("Aadhar No: " + aadhar_no);
         System.out.println("Account No: " + acc_no);
         System.out.println("Balance: " + balance);
-        System.out.println("----------------------");
+        System.out.println();
     }
 }
 
